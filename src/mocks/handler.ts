@@ -2,12 +2,12 @@ import {rest} from 'msw'
 export const handlers = [
     rest.get('/username', async (req, res, ctx) => {
         const id = req.url.searchParams.get('id')
-        // return res(
-        //     ctx.json({
-        //         name: id === '1' ? 'the one' : 'the others'
-        //     })
-        // )
-        return res(ctx.status(400))
+        return res(
+            ctx.json({
+                name: id === '1' ? 'the one' : 'the others'
+            })
+        )
+        // return res(ctx.status(400))
     }),
     rest.get('/login', async (req, res, ctx) => {
         return res(

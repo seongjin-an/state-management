@@ -9,6 +9,11 @@ import FontButton from "./components/RecoilExample/FontButton";
 import Text from "./components/RecoilExample/Text";
 import CharacterCounter from "./components/RecoilExample/CharacterCounter";
 import CurrentUserInfo from "./components/RecoilExample/CurrentUserInfo";
+import TextZustand from "./components/zustandExample/TextZustand";
+import CharacterCounterZustand from "./components/zustandExample/CharacterCounterZustand";
+import TodoListZustand from "./components/zustandExample/todo/TodoListZustand";
+import CurrentUserInfoZustand from "./components/zustandExample/CurrentUserInfoZustand";
+import Scratch from "./components/zustandExample/Scratches";
 
 function App() {
   return (
@@ -19,16 +24,23 @@ function App() {
       {/*<MobxExample/>*/}
       {/*<TodoList store={observableTodoStore}/>*/}
 
-      <RecoilRoot>
-        <FontButton/>
-        <Text/>
-        <CharacterCounter/>
-        <br/>
-        <br/>
-        <TodoList/>
-        <br/>
-        <CurrentUserInfo/>
-      </RecoilRoot>
+      {/*<RecoilRoot>*/}
+      {/*  <FontButton/>*/}
+      {/*  <TextZustand/>*/}
+      {/*  <CharacterCounterZustand/>*/}
+      {/*  <br/>*/}
+      {/*  <br/>*/}
+      {/*  <TodoList/>*/}
+      {/*  <br/>*/}
+      {/*  <CurrentUserInfoZustand/>*/}
+      {/*</RecoilRoot>*/}
+
+      {/*<TextZustand/>*/}
+      {/*<CharacterCounterZustand/>*/}
+      {/*<TodoListZustand/>*/}
+      {/*<br/>*/}
+      {/*<CurrentUserInfoZustand/>*/}
+      <Scratch/>
     </div>
   );
 }
