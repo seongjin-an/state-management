@@ -106,6 +106,7 @@ export const handlers = [
         )
     }),
     rest.get('http://localhost:3000/todo', async (req, res, ctx) => {
+
         return res(
             ctx.json({
                 todo: {
@@ -113,5 +114,6 @@ export const handlers = [
                 }
             })
         )
+
     })
 ]

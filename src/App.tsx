@@ -14,6 +14,7 @@ import CharacterCounterZustand from "./components/zustandExample/CharacterCounte
 import TodoListZustand from "./components/zustandExample/todo/TodoListZustand";
 import CurrentUserInfoZustand from "./components/zustandExample/CurrentUserInfoZustand";
 import Scratch from "./components/zustandExample/Scratches";
+import MobxCount from "./components/MobxCount";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       {/*<TestMocking/>*/}
       {/*<Counter/>*/}
 
-      {/*<MobxExample/>*/}
+      <MobxExample/>
+      <MobxCount/>
       {/*<TodoList store={observableTodoStore}/>*/}
 
       {/*<RecoilRoot>*/}
@@ -40,7 +42,7 @@ function App() {
       {/*<TodoListZustand/>*/}
       {/*<br/>*/}
       {/*<CurrentUserInfoZustand/>*/}
-      <Scratch/>
+      {/*<Scratch/>*/}
     </div>
   );
 }
